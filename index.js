@@ -178,7 +178,7 @@ app.put('/users/:userId', jsonParser, function(req, res) {
         function(err, user) {
             console.log('my user:' + user);
             if (err) {
-                return res.status(500).json({
+                res.sendstatus(500).json({
                     message: 'Internal Server Error'
                 });
             }
@@ -193,7 +193,7 @@ app.put('/users/:userId', jsonParser, function(req, res) {
             var password = req.body.password;
             //should create a user if they don't exist
              //return runBcryptAndSave(username, password, res, req);
-             //res.status(200).json({})
+             res.sendstatus(200)
             }
             
             // res.status(200).json({}); // no ideal
