@@ -9,3 +9,10 @@ addons:
     packages:
     - mongodb-org-server
 sudo: required
+deploy:
+  provider: heroku
+  api_key:
+    secure: ViiqKQq9Cg5aXdp0ZIdcR+M4ZFdoYxtdINjX/0GIuvKkQnmjB6m0h7jNgDbRR2tsgRQWesyz24Ghj+J2LhiBm4kfcWI+O26fOKo8cf1QPRMXqA8SZY/i76NhBh7j7Aq23iEH5krjCSTXWRkjCxEGt3zLGTzS8q8h3ZPVGiWV60NXoj0GzzfhxMZB2iWZ6H2F07pOjzb6DjSOHqVWWYaSdheNUYBccBATcj4G1vZ9gi2Tso0CN6PZddJs+V91PdPlKKG1F48C/eJKq932x00IZykQ1UymwDsbzpEzOTNV7Huep48WFCvIXKEo53hpzL/xoO0K9tnen7fyaq6CmsgalYuI7+mSOelCOKrc9wigzwmR2APFpfo1oEhG0aOB+dQ4mP1orfV3148Y6DmH3vEJr39y8l0X9tulGicIdxwENh5oQT21+PinTOPNzMj3pUxvJtZG68O2weOY10VRoN5DFdtBjxW2/9WjcXNXfCx0RWR/lxPWrWcvYSO3edtyXJVmu/zid4fYVdWIoYFfqFZtE70eubBrfnSgdrOPDn2V7CtoI2ewGkJkRwOlrS/RJAO7ga9km7g0PCt2djd9q6TbfHjWrcaHZ6NWbhFA0Oq5tFTCika9Cn/H0/JRx8dTCxkdTNfTxIWM7O1bCS0KPpNq6972AK1hZmSZe6M6REb+DDQ=
+  app: fierce-springs-87144
+  on:
+    repo: bjf2015/authentication
